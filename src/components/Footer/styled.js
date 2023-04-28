@@ -10,6 +10,10 @@ export const Footer = styled.section`
     background-color: #333333;
     color: #fff;
     padding: 20px 0;
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 `
 
 export const LinkCont = styled.div`

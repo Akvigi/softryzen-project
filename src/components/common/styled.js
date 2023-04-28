@@ -5,6 +5,10 @@ export const Head = styled.h2`
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+        line-height: 48px;
+    }
 `
 
 export const SecTextTop = styled.p`
@@ -25,4 +29,8 @@ export const Btn = styled.button`
     line-height: 22px;
     color: #FFFFFF;
     background-color: transparent;
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 `

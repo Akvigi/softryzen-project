@@ -7,6 +7,23 @@ export const Header = styled.header`
     padding-top: 22px;
     position: fixed;
     color: #fff;
+    @media screen and (min-width: 768px) {
+        padding-top: 16px;
+    }
+`
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 276px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 702px;
+        align-items: center;
+    }
+    margin: 0 auto;
 `
 
 export const LogoCont = styled.div`
@@ -16,12 +33,22 @@ export const LogoCont = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 16px;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        font-size: 35px;
+        line-height: 48px;
+        margin-bottom: 0;
+    }
 `
 
 export const LogoImg = styled.img`
     width: 40px;
     height: 35px;
     margin-right: 8px;
+    @media screen and (min-width: 768px) {
+        height: 30px;
+        margin-right: 10px;
+    }
 `
 
 export const GrText = styled.span`
@@ -35,6 +62,10 @@ export const Link = styled.a`
     line-height: 22px;
     &:not(:last-child) {
         margin-right: 12px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
     }
 `
 

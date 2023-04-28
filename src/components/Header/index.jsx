@@ -1,12 +1,12 @@
 import React from 'react'
 // import HeaderLink from './HeaderLink'
 import Logo from '../../images/fa-solid_book-open.svg'
-import { Link, LogoCont, GrText, LogoImg, Header } from './styled'
+import { Link, LogoCont, GrText, LogoImg, Header, Container } from './styled'
 
 const HeaderSect = () => {
   return (
     <Header>
-      <div>
+      <Container>
         <LogoCont>
           <LogoImg src={Logo} alt='opened book' />    
           <GrText>Finance</GrText> Ledger    
@@ -18,7 +18,7 @@ const HeaderSect = () => {
           <Link>Blog</Link>
           <Link>Contact</Link>
         </div>
-      </div>
+      </Container>
     </Header>
   )
 }
