@@ -23,6 +23,9 @@ export const Container = styled.div`
         max-width: 702px;
         align-items: center;
     }
+    @media screen and (min-width: 1360px) {
+        max-width: 1304px;
+    }
     margin: 0 auto;
 `
 
@@ -39,21 +42,25 @@ export const LogoCont = styled.div`
         line-height: 48px;
         margin-bottom: 0;
     }
+    
 `
 
 export const LogoImg = styled.img`
-    width: 40px;
+    max-width: 40px;
     height: 35px;
     margin-right: 8px;
     @media screen and (min-width: 768px) {
         height: 30px;
         margin-right: 10px;
     }
+    @media screen and (min-width: 1360px) {
+        margin-right: 4px;
+    }
 `
 
 export const GrText = styled.span`
     color: #28A745;
-    margin-right: 8px;
+    margin-right: 14px;
 `
 
 export const Link = styled.a`
@@ -66,6 +73,11 @@ export const Link = styled.a`
     @media screen and (min-width: 768px) {
         font-size: 18px;
         line-height: 25px;
+    }
+    @media screen and (min-width: 1360px) {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
     }
 `
 

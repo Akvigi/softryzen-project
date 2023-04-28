@@ -1,32 +1,54 @@
 import styled from "styled-components";
 
 export const Contact = styled.section`
+    @media screen and (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1360px) {
+        padding: 0;
+    }
+`
+
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 320px;
+    background: #F4F4F4;
     @media screen and (min-width: 768px) {
         flex-direction: row;
-        padding-bottom: 40px;
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1360px) {
+        max-width: 1360px;
     }
 `
 
 export const Img = styled.img`
-    width: 320px;
+    max-width: 320px;
     height: 220px;
     @media screen and (min-width: 768px) {
-        flex-direction: row;
-        width: 368px;
+        object-fit: cover;
+        max-width: 368px;
         height: 354px;
+    }
+    @media screen and (min-width: 1360px) {
+        max-width: 670px;
+        height: 454px;
     }
 `
 
 export const Form = styled.form`
-    padding: 32px 32px 33px 32px;
+    padding: 51px 0 25px;
+    margin: 0 auto;
     max-width: 280px;
-    background: #F4F4F4;
     @media screen and (min-width: 768px) {
+        padding: 32px 0 33px;
         max-width: 336px;
+    }
+    @media screen and (min-width: 1360px) {
+        padding: 56px 0 77px;
+        max-width: 642px;
     }
 `
 
@@ -47,6 +69,7 @@ export const Input = styled.input`
     padding: 16px 0 16px 8px;
     width: 100%;
     box-sizing: border-box;
+    border: none;
     &:not(:last-child) {
         margin-bottom: 16px;
     }

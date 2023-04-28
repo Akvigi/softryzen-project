@@ -12,6 +12,9 @@ export const HeroCont = styled.section`
     @media screen and (min-width: 768px) {
         padding: 378px 0;
     }
+    @media screen and (min-width: 1360px) {
+        padding: 272px 0 270px 0;
+    }
 `
 
 export const Container = styled.div`
@@ -22,6 +25,9 @@ export const Container = styled.div`
     align-items: center;
     @media screen and (min-width: 768px) {
         max-width: 525px;
+    }
+    @media screen and (min-width: 1360px) {
+        max-width: 100%;
     }
     margin: 0 auto;
 `
@@ -37,6 +43,7 @@ export const Head = styled.h1`
         line-height: 75px;
         padding: 0;
     }
+    
 `
 export const SecText = styled.h2`
     font-weight: 400;
@@ -46,6 +53,9 @@ export const SecText = styled.h2`
     @media screen and (min-width: 768px) {
         font-size: 40px;
         line-height: 48px;
+    }
+    @media screen and (min-width: 1360px) {
+        line-height: 54px;
     }
 `
 export const Btn = styled.button`
@@ -66,7 +76,7 @@ export const Btn = styled.button`
 `
 
 export const Icon = styled.img`
-    width: 12px;
+    max-width: 12px;
     height: 15px;
     margin-right: 5px;
 `

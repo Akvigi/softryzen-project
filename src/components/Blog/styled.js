@@ -1,26 +1,40 @@
 import styled from "styled-components";
 
 export const Blog = styled.section`
+`
+
+export const Container = styled.div`
     background-color: #0284D0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: 0 auto;
     @media screen and (min-width: 768px) {
         flex-direction: row-reverse;
         justify-content: space-between;
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1360px) {
+        max-width: 1360px;
     }
 `
 
 export const Img = styled.img`
-    width: 320px;
+    max-width: 320px;
     height: 247px;
     @media screen and (min-width: 768px) {
-        width: 368px;
+        object-fit: cover;
+        max-width: 368px;
         height: 493px;
+    }
+    @media screen and (min-width: 1360px) {
+        max-width: 670px;
+        height: 460px;
     }
 `
 
-export const Container = styled.div`
+export const TextContainer = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -32,5 +46,9 @@ export const Container = styled.div`
         max-width: 100%;
         font-size: 18px;
         line-height: 25px;
+    }
+    @media screen and (min-width: 1360px) {     
+        padding: 80px 28px;
+        max-width: 642px;
     }
 `

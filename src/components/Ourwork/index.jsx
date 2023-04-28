@@ -1,13 +1,13 @@
 import React from 'react'
-import { SecTextTop, Head } from 'components/common/styled'
-import { Gallery, Img, Item, OurWork, TextCont } from './styled'
+import { Head } from 'components/common/styled'
+import { Gallery, Img, Item, OurWork, TextCont, TopText } from './styled'
 import data from './data'
 
 const index = () => {
   return (
       <OurWork>
         <TextCont>
-            <SecTextTop>This is what we do</SecTextTop>
+            <TopText>This is what we do</TopText>
             <Head>Business Cases</Head>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>  
         </TextCont>  
