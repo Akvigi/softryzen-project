@@ -12,7 +12,6 @@ export const Header = styled.header`
         padding-top: 16px;
         padding-bottom: 20px;
     }
-    
     opacity: 1;
     z-index: 20;
     transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -50,7 +49,6 @@ export const LogoCont = styled.div`
     }
     cursor: default;
     transition: scale 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    /* transition: margin 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
     &:hover {
         scale: 1.1;
         &>span {

@@ -49,7 +49,6 @@ export const TeamGallery = styled.ul`
 
 export const Item = styled.li`
     text-align: center;
-    position: relative;
     z-index: 0;
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -70,10 +69,23 @@ export const Item = styled.li`
     
 `
 
+export const Wrapp = styled.div`
+    position: relative;
+    margin-bottom: 16px;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        transform: scale(1.03);
+        /* box-shadow: $box-shadow; */
+        &>div {
+            opacity: 0.6;
+            pointer-events: auto;
+        }
+    }
+`
+
 export const Img = styled.img`
     max-width: 280px;
     height: 186px;
-    margin-bottom: 16px;
     @media screen and (min-width: 768px) {
         max-width: 223px;
         height: 148px;
@@ -84,10 +96,12 @@ export const Img = styled.img`
         margin-bottom: 15px;
         height: 287px;
     }
-    &:hover ~ div {
-        opacity: 1;
-        pointer-events: auto;
-    }
+    transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* &:hover {
+        & ~ div {
+            opacity: 0.6;
+            pointer-events: auto;
+    }} */
 `
 
 export const Name = styled.h3`
@@ -127,13 +141,16 @@ export const Overlay = styled.div`
     @media screen and (min-width: 1360px) {
         height: 287px;
     }
-    background-color: rgb(0,0,0, 0.5);
+    background-color: rgb(0,0,0);
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
     &:hover {
-        opacity: 1;
+        opacity: 0.6;
         pointer-events: auto;
+        & ~ img {
+            scale: 1.1;
+        }
     }
 `
 
@@ -143,6 +160,7 @@ export const Link = styled.a`
     width: auto;
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
     cursor: pointer;
     &:not(:last-child) {
         margin-right: 25px;

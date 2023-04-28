@@ -1,5 +1,5 @@
 import React from 'react'
-import { Img, Item, Job, Link, Name, Overlay, Team, TeamGallery, TextCont, TopSecText } from './styled'
+import { Img, Item, Job, Link, Name, Overlay, Team, TeamGallery, TextCont, TopSecText, Wrapp } from './styled'
 import { Head } from 'components/common/styled'
 
 import data from './data'
@@ -20,43 +20,46 @@ const index = () => {
       <TeamGallery>
         {data.map(({ src, name, job }) => (
           <Item key={name}>
-            <Img src={src} alt={job} />
+            <Wrapp>
+              <Img src={src} alt={job} />
+              <Overlay>
+                <Link href="https://uk-ua.facebook.com">
+                    <FacebookSharpIcon
+                        sx={{
+                            width: '35px',
+                            height: '35px',
+                        }}
+                    />
+                </Link>
+                <Link href="https://twitter.com/home">
+                    <TwitterIcon
+                        sx={{
+                            width: '35px',
+                            height: '35px',
+                        }}
+                    />
+                </Link>      
+                <Link href="https://www.youtube.com">
+                    <YouTubeIcon
+                        sx={{
+                            width: '40px',
+                            height: '35px',
+                          }}
+                    />
+                </Link>      
+                <Link href="https://www.linkedin.com">
+                    <LinkedInIcon
+                        sx={{
+                            width: '35px',
+                            height: '35px',
+                        }}
+                    />
+                </Link>
+              </Overlay>
+            </Wrapp>
             <Name>{name}</Name>
             <Job>{job}</Job>
-            <Overlay>
-              <Link href="https://uk-ua.facebook.com">
-                  <FacebookSharpIcon
-                      sx={{
-                          width: '35px',
-                          height: '35px',
-                      }}
-                  />
-              </Link>
-              <Link href="https://twitter.com/home">
-                  <TwitterIcon
-                      sx={{
-                          width: '35px',
-                          height: '35px',
-                      }}
-                  />
-              </Link>      
-              <Link href="https://www.youtube.com">
-                  <YouTubeIcon
-                      sx={{
-                          width: '40px',
-                          height: '35px',
-                        }}
-                  />
-              </Link>      
-              <Link href="https://www.linkedin.com">
-                  <LinkedInIcon
-                      sx={{
-                          width: '35px',
-                          height: '35px',
-                      }}
-                  />
-              </Link>
-            </Overlay>
+            
           </Item>))}      
       </TeamGallery>
     </Team>
