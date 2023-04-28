@@ -89,4 +89,8 @@ export const Img = styled.img`
         max-width: 421px;
         height: 282px;
     }
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
 `

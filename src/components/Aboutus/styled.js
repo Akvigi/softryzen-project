@@ -1,3 +1,4 @@
+import { Btn } from "components/common/styled";
 import styled from "styled-components";
 
 export const AboutUs = styled.section`
@@ -62,3 +63,11 @@ export const TextCont = styled.div`
         max-width: 642px;
     }
 `
+
+export const BtnMore = styled(Btn)`
+    &:hover {
+        border-color: #28A745;
+        color: #28A745;
+    }
+`
+

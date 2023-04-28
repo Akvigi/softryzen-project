@@ -6,10 +6,16 @@ export const Header = styled.header`
     width: 100%;
     padding-top: 22px;
     position: fixed;
+    padding-bottom: 16px;
     color: #fff;
     @media screen and (min-width: 768px) {
         padding-top: 16px;
+        padding-bottom: 20px;
     }
+    
+    opacity: 1;
+    z-index: 20;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 `
 
 export const Container = styled.div`
@@ -42,7 +48,15 @@ export const LogoCont = styled.div`
         line-height: 48px;
         margin-bottom: 0;
     }
-    
+    cursor: default;
+    transition: scale 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    /* transition: margin 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+    &:hover {
+        scale: 1.1;
+        &>span {
+            color: #2EBF4F;
+        }
+    }
 `
 
 export const LogoImg = styled.img`
@@ -60,7 +74,7 @@ export const LogoImg = styled.img`
 
 export const GrText = styled.span`
     color: #28A745;
-    margin-right: 14px;
+    /* margin-right: 14px; */
 `
 
 export const Link = styled.a`
@@ -77,6 +91,24 @@ export const Link = styled.a`
     @media screen and (min-width: 1360px) {
         &:not(:last-child) {
             margin-right: 40px;
+        }
+    }
+    position: relative;
+    &:hover {
+        &::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #2EBF4F;
+            opacity: 0.7;
+            left: 0%;
+            @media screen and (min-width: 1360px) {
+                width: 160%;
+                left: -30%;
+            }
+            bottom: -15px;
+            border-radius: 2px;
+            position: absolute;
         }
     }
 `

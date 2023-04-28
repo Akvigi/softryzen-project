@@ -19,6 +19,17 @@ export const SecTextBot = styled.p`
     margin-bottom: 24px;
 `
 
+export const BtnHC = styled.button`
+    background-color: #28A745;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    &:hover {
+        background: #2EBF4F;
+    }
+`
 
 export const Btn = styled.button`
     border: 1px solid #FFFFFF;
@@ -32,5 +43,8 @@ export const Btn = styled.button`
     @media screen and (min-width: 768px) {
         font-size: 18px;
         line-height: 25px;
+    }
+    &:hover {
+        background: #F4F4F4;
     }
 `

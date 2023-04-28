@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Btn} from "../common/styled";
 
 export const Blog = styled.section`
 `
@@ -50,5 +51,12 @@ export const TextContainer = styled.div`
     @media screen and (min-width: 1360px) {     
         padding: 80px 28px;
         max-width: 642px;
+    }
+`
+
+export const BtnBlog = styled(Btn)`
+    &:hover {
+        border-color: #0284D0;
+        color: #0284D0;
     }
 `

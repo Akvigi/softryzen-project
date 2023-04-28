@@ -1,3 +1,4 @@
+import { BtnHC } from "components/common/styled";
 import styled from "styled-components";
 
 export const Contact = styled.section`
@@ -85,11 +86,6 @@ export const Input = styled.input`
     }
 `
 
-export const Btn = styled.button`
+export const Btn = styled(BtnHC)`
     padding: 16px 56px;
-    background-color: #28A745;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 18px;
-    line-height: 25px;
 `

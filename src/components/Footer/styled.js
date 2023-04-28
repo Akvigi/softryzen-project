@@ -31,4 +31,8 @@ export const Link = styled.a`
     &:not(:last-child) {
         margin-right: 25px;
     }
+    &:hover>svg {
+        fill: #28A745;
+        color: #28A745;
+    }
 `

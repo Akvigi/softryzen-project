@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import heroimg from '../../images/home/showcase.jpg'
+import { BtnHC } from "components/common/styled";
 
 export const HeroCont = styled.section`
     padding: 160px 0 265px 0;
@@ -58,14 +59,8 @@ export const SecText = styled.h2`
         line-height: 54px;
     }
 `
-export const Btn = styled.button`
+export const Btn = styled(BtnHC)`
     padding: 16px 32px;
-    background-color: #28A745;
-    border-radius: 5px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
     align-items: center;
     display: flex;
     flex-direction: row;

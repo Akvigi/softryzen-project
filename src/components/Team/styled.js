@@ -49,6 +49,8 @@ export const TeamGallery = styled.ul`
 
 export const Item = styled.li`
     text-align: center;
+    position: relative;
+    z-index: 0;
     &:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -65,6 +67,7 @@ export const Item = styled.li`
             margin-right: 20px;
         }
     }
+    
 `
 
 export const Img = styled.img`
@@ -80,6 +83,10 @@ export const Img = styled.img`
         max-width: 422px;
         margin-bottom: 15px;
         height: 287px;
+    }
+    &:hover ~ div {
+        opacity: 1;
+        pointer-events: auto;
     }
 `
 
@@ -102,4 +109,43 @@ export const Job = styled.p`
         font-size: 18px;
         line-height: 25px;
     }
+`
+
+export const Overlay = styled.div`
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 186px;
+    @media screen and (min-width: 768px) {
+        height: 148px;
+    }
+    @media screen and (min-width: 1360px) {
+        height: 287px;
+    }
+    background-color: rgb(0,0,0, 0.5);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    &:hover {
+        opacity: 1;
+        pointer-events: auto;
+    }
+`
+
+export const Link = styled.a`
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-right: 25px;
+    }
+    transition: pointer-events 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 `
