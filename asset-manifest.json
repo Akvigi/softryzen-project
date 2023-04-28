@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/softryzen-project/static/css/main.82c32144.css",
+    "main.js": "/softryzen-project/static/js/main.995a8c09.js",
+    "static/media/showcase.jpg": "/softryzen-project/static/media/showcase.51cab55d982ce4bcedb5.jpg",
+    "static/media/people.jpg": "/softryzen-project/static/media/people.f32f74cc55eb8b3518b7.jpg",
+    "static/media/cases4.jpg": "/softryzen-project/static/media/cases4.bc8713e3f48b0aee4eab.jpg",
+    "static/media/blog.jpg": "/softryzen-project/static/media/blog.7a77e4040b289e838659.jpg",
+    "static/media/person1.jpg": "/softryzen-project/static/media/person1.fd246fc517ebc04c1f67.jpg",
+    "static/media/cases1.jpg": "/softryzen-project/static/media/cases1.64dcfe4d42845316bcf2.jpg",
+    "static/media/contact.jpg": "/softryzen-project/static/media/contact.df3181530910b96adc57.jpg",
+    "static/media/cases6.jpg": "/softryzen-project/static/media/cases6.68742c6ad9d5c7023ae2.jpg",
+    "static/media/person2.jpg": "/softryzen-project/static/media/person2.6d1f75facd2adf912ada.jpg",
+    "static/media/cases3.jpg": "/softryzen-project/static/media/cases3.3758803cff01fbec967c.jpg",
+    "static/media/person3.jpg": "/softryzen-project/static/media/person3.9f444ad1693a0e346d5f.jpg",
+    "static/media/cases5.jpg": "/softryzen-project/static/media/cases5.936cb2fcbdc950fb047d.jpg",
+    "static/media/cases2.jpg": "/softryzen-project/static/media/cases2.855b02a74ffed4538fb1.jpg",
+    "static/media/fa-solid_book-open.svg": "/softryzen-project/static/media/fa-solid_book-open.7a350e7c6bbf7a8ae52dc4cea091956e.svg",
+    "index.html": "/softryzen-project/index.html",
+    "main.82c32144.css.map": "/softryzen-project/static/css/main.82c32144.css.map",
+    "main.995a8c09.js.map": "/softryzen-project/static/js/main.995a8c09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82c32144.css",
+    "static/js/main.995a8c09.js"
+  ]
+}
