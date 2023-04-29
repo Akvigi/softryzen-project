@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import { Btn, Container, Contact, Form, Head, Img, Input, Icon, InpCont } from './styled'
-import img from '../../images/home/contact.jpg'
+
+import jsrc from '../../images/home/contact.jpg'
+import jsrcx2 from '../../images/home/contact@2x.jpg'
+import wsrc from '../../images/home/contact.webp'
+import wsrcx2 from '../../images/home/contact@2x.webp'
 import ic from '../../images/icons.svg'
+
 import Notiflix from 'notiflix'
 
 const ContactForm = ({refTo}) => {
@@ -41,7 +46,11 @@ const ContactForm = ({refTo}) => {
   return (
     <Contact ref={refTo}>
       <Container>
-        <Img src={img} />
+        <picture>
+          <source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
+          <source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
+          <Img src={jsrc} alt='coffee`s with books' />
+        </picture>
         <Form onSubmit={(e) => submitForm(e, name, email)}>
           <Head>Request Callback</Head>
           <Input value={name}

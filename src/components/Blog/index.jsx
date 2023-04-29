@@ -1,13 +1,20 @@
 import React from 'react'
 import { Blog, TextContainer, Img, Container, BtnBlog } from './styled'
 import { Head, SecTextBot, SecTextTop } from 'components/common/styled'
-import img from '../../images/home/blog.jpg'
+import jsrc from '../../images/home/blog.jpg'
+import jsrcx2 from '../../images/home/blog@2x.jpg'
+import wsrc from '../../images/home/blog.webp'
+import wsrcx2 from '../../images/home/blog@2x.webp'
 
 const index = ({refTo}) => {
     return (
         <Blog ref={refTo}>
             <Container>
-                <Img src={img} alt='coffee`s with books'/>
+                <picture>
+                    <source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
+                    <source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
+                    <Img src={jsrc} alt='coffee`s with books' />
+                </picture>
                 <TextContainer>
                     <SecTextTop>April 16 2020</SecTextTop>
                     <Head>Blog Post One</Head>

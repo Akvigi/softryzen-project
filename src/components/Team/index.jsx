@@ -18,10 +18,15 @@ const index = () => {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
       </TextCont>
       <TeamGallery>
-        {data.map(({ src, name, job }) => (
+        {data.map(({ jsrc, jsrcx2, wsrc, wsrcx2, name, job, id}) => (
           <Item key={name}>
             <Wrapp>
-              <Img src={src} alt={job} />
+              <picture>
+                {/* <source srcSet={wsrc} type='image/webp' /> */}
+                <source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
+                <source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
+                <Img src={jsrc} alt={job} />
+              </picture>
               <Overlay>
                 <Link href="https://uk-ua.facebook.com">
                     <FacebookSharpIcon

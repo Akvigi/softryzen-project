@@ -12,7 +12,13 @@ const index = ({refTo, setModal}) => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>  
         </TextCont>  
         <Gallery>
-            {data.map(({src, alt, id}) => <Item><Img src={src} key={id} onClick={() => setModal({src, alt})} /></Item>)}    
+        {data.map(({ jsrc, jsrcx2, wsrc, wsrcx2, job, alt}, index) => <Item>
+          <picture onClick={() => setModal({ jsrc, jsrcx2, wsrc, wsrcx2, alt, index})}>
+            <source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
+            <source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
+            <Img src={jsrc} alt={job} />
+          </picture>
+        </Item>)}    
         </Gallery>
     </OurWork>
   )

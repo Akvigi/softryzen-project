@@ -1,40 +1,76 @@
-import c1 from './../../images/cases/cases1.jpg'
-import c2 from './../../images/cases/cases2.jpg'
-import c3 from './../../images/cases/cases3.jpg'
-import c4 from './../../images/cases/cases4.jpg'
-import c5 from './../../images/cases/cases5.jpg'
-import c6 from './../../images/cases/cases6.jpg'
+import jc1 from './../../images/cases/cases1.jpg'
+import jc2 from './../../images/cases/cases2.jpg'
+import jc3 from './../../images/cases/cases3.jpg'
+import jc4 from './../../images/cases/cases4.jpg'
+import jc5 from './../../images/cases/cases5.jpg'
+import jc6 from './../../images/cases/cases6.jpg'
+import wc1 from './../../images/cases/cases1.webp'
+import wc2 from './../../images/cases/cases2.webp'
+import wc3 from './../../images/cases/cases3.webp'
+import wc4 from './../../images/cases/cases4.webp'
+import wc5 from './../../images/cases/cases5.webp'
+import wc6 from './../../images/cases/cases6.webp'
+import jc12x from './../../images/cases/cases1@2x.jpg'
+import jc22x from './../../images/cases/cases2@2x.jpg'
+import jc32x from './../../images/cases/cases3@2x.jpg'
+import jc42x from './../../images/cases/cases4@2x.jpg'
+import jc52x from './../../images/cases/cases5@2x.jpg'
+import jc62x from './../../images/cases/cases6@2x.jpg'
+import wc12x from './../../images/cases/cases1@2x.webp'
+import wc22x from './../../images/cases/cases2@2x.webp'
+import wc32x from './../../images/cases/cases3@2x.webp'
+import wc42x from './../../images/cases/cases4@2x.webp'
+import wc52x from './../../images/cases/cases5@2x.webp'
+import wc62x from './../../images/cases/cases6@2x.webp'
 
 const data = [
     {
-        src: c1,
+        jsrc: jc1,
+        jsrcx2: jc12x,
+        wsrc: wc1,
+        wsrcx2: wc12x,
         id: '11',
-        alt: "our group is working in team",
+        alt: "Our group is working in team",
     },
     {
-        src:c2,
+        jsrc: jc2,
+        jsrcx2: jc22x,
+        wsrc: wc2,
+        wsrcx2: wc22x,
         id: '21',
-        alt: "we use best technologies",  
+        alt: "We use best technologies",  
     },
     {
-        src:c3,
+        jsrc: jc3,
+        jsrcx2: jc32x,
+        wsrc: wc3,
+        wsrcx2: wc32x,
         id: '13',
-        alt: "we always take in account statistics",  
+        alt: "We always take in account statistics",  
     },
     {
-        src:c4,
+        jsrc: jc4,
+        jsrcx2: jc42x,
+        wsrc: wc4,
+        wsrcx2: wc42x,
         id: '41',
-        alt: "our office in the city centre",  
+        alt: "Our office in the city centre",  
     },
     {
-        src:c5,
+        jsrc: jc5,
+        jsrcx2: jc52x,
+        wsrc: wc5,
+        wsrcx2: wc52x,
         id: '15',
-        alt: "we are always friendly with our clients",  
+        alt: "We are always friendly with our clients",  
     },
     {
-        src:c6,
+        jsrc: jc6,
+        jsrcx2: jc62x,
+        wsrc: wc6,
+        wsrcx2: wc62x,
         id: '26',
-        alt: "our team manager with team",  
+        alt: "Our team manager with team",  
     }
 ]
 

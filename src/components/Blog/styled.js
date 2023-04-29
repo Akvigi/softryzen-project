@@ -22,15 +22,15 @@ export const Container = styled.div`
 `
 
 export const Img = styled.img`
-    max-width: 320px;
+    width: 100%;
     height: 247px;
     @media screen and (min-width: 768px) {
         object-fit: cover;
-        max-width: 368px;
+        width: 368px;
         height: 493px;
     }
     @media screen and (min-width: 1360px) {
-        max-width: 670px;
+        width: 670px;
         height: 460px;
     }
 `
