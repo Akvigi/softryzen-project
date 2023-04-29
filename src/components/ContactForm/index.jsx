@@ -61,6 +61,7 @@ const ContactForm = ({refTo}) => {
               <use href={ic + "#worning"} />
             </Icon>}
             <Input value={email}
+              type='email'
               style={error ? {border: "1px solid red"} : {}}
               onChange={(e) => onEmChange(e.currentTarget.value)}
               placeholder={error ? error : 'Enter email*'} />
