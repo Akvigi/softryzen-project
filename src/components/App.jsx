@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Hero from './Hero'
 import AboutUs from "./Aboutus";
@@ -7,18 +7,21 @@ import Blog from "./Blog";
 import Team from "./Team";
 import Contact from "./ContactForm";
 import Footer from "./Footer";
+import Modal from "./Modal";
 
 export const App = () => {
+  const [modal, setModal] = useState(null)
   return (
     <div>
       <Header />
       <Hero />
       <AboutUs />
-      <OurWork />
+      <OurWork setModal={setModal} />
       <Blog />
       <Team />
       <Contact />
-      <Footer/>
+      <Footer />
+      {modal && <Modal src={modal.src} alt={modal.alt} unshowModal={() => setModal(null)}/>}
     </div>
   );
 };

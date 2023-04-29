@@ -3,7 +3,7 @@ import { Head } from 'components/common/styled'
 import { Gallery, Img, Item, OurWork, TextCont, TopText } from './styled'
 import data from './data'
 
-const index = () => {
+const index = ({setModal}) => {
   return (
       <OurWork>
         <TextCont>
@@ -12,7 +12,7 @@ const index = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>  
         </TextCont>  
         <Gallery>
-            {data.map(({src, id}) => <Item><Img src={src} key={id} /></Item>)}    
+            {data.map(({src, alt, id}) => <Item><Img src={src} key={id} onClick={() => setModal({src, alt})} /></Item>)}    
         </Gallery>
     </OurWork>
   )

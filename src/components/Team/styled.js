@@ -75,7 +75,6 @@ export const Wrapp = styled.div`
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         transform: scale(1.03);
-        /* box-shadow: $box-shadow; */
         &>div {
             opacity: 0.6;
             pointer-events: auto;

@@ -51,16 +51,18 @@ export const LogoCont = styled.div`
     transition: scale 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     &:hover {
         scale: 1.1;
-        &>span {
+        &>span, &>svg {
             color: #2EBF4F;
+            fill: #2EBF4F;
         }
     }
 `
 
-export const LogoImg = styled.img`
+export const LogoImg = styled.svg`
     max-width: 40px;
     height: 35px;
     margin-right: 8px;
+    fill: #28A745;
     @media screen and (min-width: 768px) {
         height: 30px;
         margin-right: 10px;

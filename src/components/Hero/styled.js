@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import heroimg from '../../images/home/showcase.jpg'
+import heroimg2x from '../../images/home/showcase@2x.jpg'
 import { BtnHC } from "components/common/styled";
 
 export const HeroCont = styled.section`
@@ -7,6 +8,10 @@ export const HeroCont = styled.section`
     text-align: center;
     color: #FFFFFF;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg});
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(${heroimg2x});
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,8 +75,8 @@ export const Btn = styled(BtnHC)`
     }
 `
 
-export const Icon = styled.img`
-    max-width: 12px;
-    height: 15px;
-    margin-right: 5px;
+export const Icon = styled.svg`
+    max-width: 9px;
+    height: 18px;
+    margin-right: 8px;
 `

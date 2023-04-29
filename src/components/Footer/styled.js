@@ -36,3 +36,9 @@ export const Link = styled.a`
         color: #28A745;
     }
 `
+
+export const Icon = styled.svg`
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+`

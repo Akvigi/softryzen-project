@@ -43,6 +43,7 @@ export const Form = styled.form`
     padding: 51px 0 25px;
     margin: 0 auto;
     max-width: 280px;
+    width: 100%;
     @media screen and (min-width: 768px) {
         padding: 32px 0 33px;
         max-width: 336px;
@@ -86,6 +87,27 @@ export const Input = styled.input`
     }
 `
 
+export const InpCont = styled.div`
+    position: relative;
+    width: 100%;
+    display: flex;
+`
+
+
 export const Btn = styled(BtnHC)`
     padding: 16px 56px;
+`
+
+export const Icon = styled.svg`
+    position: absolute;
+    fill: red;
+    width: 20px;
+    height: 20px;
+    bottom: 42px;
+    right: 10px;
+    @media screen and (min-width: 1360px) {
+        width: 35px;
+        height: 35px;
+        bottom: 34px;
+    }
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Btn, Container, Head, HeroCont, Icon, SecText } from './styled'
-import ic from '../../images/gallery/next.png'
+import ic from '../../images/icons.svg'
 
 const index = () => {
   return (
@@ -8,7 +8,12 @@ const index = () => {
       <Container>
         <Head>The Sky Is The Limit</Head>
         <SecText>We provide world class financial assistance</SecText>
-        <Btn><Icon src={ic} />Read More</Btn>
+        <Btn>
+          <Icon>
+            <use href={ic + `#angle`}/>
+          </Icon>
+          Read More
+        </Btn>
       </Container>
     </HeroCont>
   )

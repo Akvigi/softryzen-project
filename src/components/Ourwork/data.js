@@ -8,27 +8,33 @@ import c6 from './../../images/cases/cases6.jpg'
 const data = [
     {
         src: c1,
-        id: '11'
+        id: '11',
+        alt: "our group is working in team",
     },
     {
         src:c2,
-        id: '21'  
+        id: '21',
+        alt: "we use best technologies",  
     },
     {
         src:c3,
-        id: '13'  
+        id: '13',
+        alt: "we always take in account statistics",  
     },
     {
         src:c4,
-        id: '41'  
+        id: '41',
+        alt: "our office in the city centre",  
     },
     {
         src:c5,
-        id: '15'  
+        id: '15',
+        alt: "we are always friendly with our clients",  
     },
     {
         src:c6,
-        id: '26'  
+        id: '26',
+        alt: "our team manager with team",  
     }
 ]
 

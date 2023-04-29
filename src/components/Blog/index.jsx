@@ -2,7 +2,6 @@ import React from 'react'
 import { Blog, TextContainer, Img, Container, BtnBlog } from './styled'
 import { Head, SecTextBot, SecTextTop } from 'components/common/styled'
 import img from '../../images/home/blog.jpg'
-// import img from '../../images/home/blog@2x.jpg'
 
 const index = () => {
     return (
