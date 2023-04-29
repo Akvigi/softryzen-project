@@ -101,7 +101,8 @@ export const Close = styled(Btn)`
     bottom: -40px;
     right: 0px;
     width: 25px;
-
+    opacity: 0.7;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     @media screen and (min-width: 768px) {
         bottom: -45px;
         width: 35px;
@@ -110,6 +111,9 @@ export const Close = styled(Btn)`
         bottom: -20px;
         width: 50px;
         right: -57px;
+    }
+    &:hover {
+        opacity: 1;
     }
 `
 export const Icon = styled.svg`
