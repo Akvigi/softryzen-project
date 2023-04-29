@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { Btn, Container, Contact, Form, Head, Img, Input, Icon, InpCont } from './styled'
 import img from '../../images/home/contact.jpg'
 import ic from '../../images/icons.svg'
+import Notiflix from 'notiflix'
 
-const ContactForm = () => {
-  const [email, setEmail] = useState()
-  const [name, setName] = useState()
+const ContactForm = ({refTo}) => {
+  const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
   const [error, setError] = useState(false)
 
   const onEmChange = (text) => {
@@ -13,17 +14,32 @@ const ContactForm = () => {
     setEmail(text)
   }
 
+  const validateEmail = (em) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(em);
+  }
+
+  const resetForm = () => {
+    setEmail('')
+    setName('')
+  }
+
   const submitForm = (e, n, em) => {
     e.preventDefault()
+    resetForm()
     if (em === '' || em === null || em === undefined) {
-      setError(true)
-      return
+      setError("This is a required field")
+      return 
+    } else if (!validateEmail(em)) {
+      setError("This is not a valid email")
+      return 
     }
-    console.log(em)
+    Notiflix.Notify.success('We will contact you in future! Stay tuned!');
+    console.log("email:", em, "name:", n)
   }
 
   return (
-    <Contact>
+    <Contact ref={refTo}>
       <Container>
         <Img src={img} />
         <Form onSubmit={(e) => submitForm(e, name, email)}>
@@ -38,7 +54,7 @@ const ContactForm = () => {
             <Input value={email}
               style={error ? {border: "1px solid red"} : {}}
               onChange={(e) => onEmChange(e.currentTarget.value)}
-              placeholder={error ? "This is a required field" : 'Enter email*'} />
+              placeholder={error ? error : 'Enter email*'} />
           </InpCont>  
           <Btn type='submit'>Send</Btn>
         </Form>  

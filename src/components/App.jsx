@@ -11,15 +11,26 @@ import Modal from "./Modal";
 
 export const App = () => {
   const [modal, setModal] = useState(null)
+  const heroRef = React.createRef(null);
+	const aboutUsRef = React.createRef(null);
+  const workRef = React.createRef(null);
+  const blogRef = React.createRef(null);
+  const contactRef = React.createRef(null);
+  const onScroll = section => window.scrollTo({top: section.current.offsetTop - 100, behavior: 'smooth'});
   return (
     <div>
-      <Header />
-      <Hero />
-      <AboutUs />
-      <OurWork setModal={setModal} />
-      <Blog />
+      <Header
+        goToHero={() => onScroll(heroRef)}
+        goToAbout={() => onScroll(aboutUsRef)}
+        goToWork={() => onScroll(workRef)}
+        goToBlog={() => onScroll(blogRef)}
+        goToContact={() => onScroll(contactRef)} />
+      <Hero refTo={heroRef} />
+      <AboutUs refTo={aboutUsRef}/>
+      <OurWork refTo={workRef} setModal={setModal} />
+      <Blog refTo={blogRef} />
       <Team />
-      <Contact />
+      <Contact refTo={contactRef} />
       <Footer />
       {modal && <Modal src={modal.src} alt={modal.alt} unshowModal={() => setModal(null)}/>}
     </div>

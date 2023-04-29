@@ -1,9 +1,6 @@
 import React from 'react'
 
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookSharpIcon from '@mui/icons-material/FacebookSharp';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import { Footer, Icon, Link, LinkCont } from './styled';
+import { Footer, Icon, IconIn, IconYT, Link, LinkCont } from './styled';
 import ic from '../../images/icons.svg'
 
 const index = () => {
@@ -11,33 +8,24 @@ const index = () => {
     <Footer>
         <LinkCont>
             <Link href="https://uk-ua.facebook.com">
-                <FacebookSharpIcon
-                    sx={{
-                        width: '35px',
-                        height: '35px',
-                    }}
-                />
+                <Icon>
+                    <use href={ic + '#facebook' } />
+                </Icon>
             </Link>
             <Link href="https://twitter.com/home">
-                <TwitterIcon
-                    sx={{
-                        width: '35px',
-                        height: '35px',
-                    }}
-                />
+                <Icon>
+                    <use href={ic + '#twitter' } />
+                </Icon>
             </Link>      
             <Link href="https://www.youtube.com">
-                <YouTubeIcon
-                    sx={{
-                        width: '40px',
-                        height: '35px',
-                      }}
-                />
+                <IconYT>
+                    <use href={ic + '#youtube' } />
+                </IconYT>
             </Link>      
             <Link href="https://www.linkedin.com">
-                <Icon>
+                <IconIn>
                     <use href={ic + '#linkedin' } />
-                </Icon>
+                </IconIn>
             </Link>
         </LinkCont>  
         <p>Copyright © 2021 - FinanceLedger</p>        

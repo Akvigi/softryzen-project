@@ -3,9 +3,9 @@ import { Head } from 'components/common/styled'
 import { Gallery, Img, Item, OurWork, TextCont, TopText } from './styled'
 import data from './data'
 
-const index = ({setModal}) => {
+const index = ({refTo, setModal}) => {
   return (
-      <OurWork>
+      <OurWork ref={refTo}>
         <TextCont>
             <TopText>This is what we do</TopText>
             <Head>Business Cases</Head>

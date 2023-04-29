@@ -3,9 +3,9 @@ import { Blog, TextContainer, Img, Container, BtnBlog } from './styled'
 import { Head, SecTextBot, SecTextTop } from 'components/common/styled'
 import img from '../../images/home/blog.jpg'
 
-const index = () => {
+const index = ({refTo}) => {
     return (
-        <Blog>
+        <Blog ref={refTo}>
             <Container>
                 <Img src={img} alt='coffee`s with books'/>
                 <TextContainer>

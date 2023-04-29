@@ -3,9 +3,9 @@ import { AboutUs, Img, TextCont, Container, BtnMore} from './styled'
 import { Head, SecTextBot, SecTextTop} from '../common/styled'
 import img from '../../images/home/people.jpg'
 
-const index = () => {
+const index = ({refTo}) => {
   return (
-    <AboutUs>
+    <AboutUs ref={refTo}>
       <Container>
         <Img src={img} alt='Our team'/>
         <TextCont>

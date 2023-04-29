@@ -42,3 +42,11 @@ export const Icon = styled.svg`
     height: 35px;
     fill: #fff;
 `
+
+export const IconIn = styled(Icon)`
+    width: 31px;
+`
+
+export const IconYT = styled(Icon)`
+    width: 40px;
+`
