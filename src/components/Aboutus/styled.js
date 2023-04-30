@@ -2,13 +2,7 @@ import { Btn } from "components/common/styled";
 import styled from "styled-components";
 
 export const AboutUs = styled.section`
-    /* display: flex;
-    flex-direction: column;
-    background-color: #28A745;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-    } */
+
 `
 
 export const Container = styled.div`
@@ -49,7 +43,6 @@ export const TextCont = styled.div`
     line-height: 22px;
     max-width: 279px;
     @media screen and (min-width: 768px) {
-        /* padding: 62px 32px; */
         padding: 0;
         font-size: 18px;
         line-height: 25px;
@@ -57,7 +50,6 @@ export const TextCont = styled.div`
         max-width: 336px;
     }
     @media screen and (min-width: 1360px) {
-        /* padding: 80px 20px 86px; */
         justify-content: center;
         margin: 0 auto;
         max-width: 642px;

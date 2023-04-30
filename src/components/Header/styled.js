@@ -74,7 +74,7 @@ export const LogoImg = styled.svg`
 
 export const GrText = styled.span`
     color: #28A745;
-    /* margin-right: 14px; */
+
 `
 
 export const Link = styled.a`

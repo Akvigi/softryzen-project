@@ -32,10 +32,6 @@ export const ModalWindow = styled.div`
 export const Img = styled.img`
     max-width: 100%;
     max-height: 100%;
-    /* @media screen and (min-width: 768px) {
-        max-width: calc(100vw - 100px);
-        max-height: calc(100vh - 34px);
-    } */
 `
 
 const Cont = styled.div`
@@ -134,7 +130,6 @@ export const AltCont = styled.div`
     }
     @media screen and (min-width: 1360px) {
         font-size: 25px;
-        /* bottom: -50px; */
     }
     left: 0;
 `

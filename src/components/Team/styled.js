@@ -96,11 +96,6 @@ export const Img = styled.img`
         height: 287px;
     }
     transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* &:hover {
-        & ~ div {
-            opacity: 0.6;
-            pointer-events: auto;
-    }} */
 `
 
 export const Name = styled.h3`

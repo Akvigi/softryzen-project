@@ -1,16 +1,24 @@
 import styled from "styled-components";
 import heroimg from '../../images/home/showcase.jpg'
 import heroimg2x from '../../images/home/showcase@2x.jpg'
+import heroimgwbp from '../../images/home/showcase.webp'
+import heroimgwbp2x from '../../images/home/showcase@2x.webp'
 import { BtnHC } from "components/common/styled";
 
 export const HeroCont = styled.section`
     padding: 160px 0 265px 0;
     text-align: center;
     color: #FFFFFF;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg});
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg});
+    @supports (background-image: -webkit-image-set(url(${heroimgwbp}) 1x)) {
+        background-image: -webkit-image-set(url(${heroimgwbp}) 1x) 
+    }
+   
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(${heroimg2x});
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg2x});
+        @supports (background-image: -webkit-image-set(url(${heroimgwbp2x}) 2x)) {
+            background-image: -webkit-image-set(url(${heroimgwbp2x}) 2x) 
+        }
     }
     background-repeat: no-repeat;
     background-position: center;

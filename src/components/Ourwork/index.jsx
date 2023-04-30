@@ -14,8 +14,8 @@ const index = ({refTo, setModal}) => {
         <Gallery>
         {data.map(({ jsrc, jsrcx2, wsrc, wsrcx2, job, alt}, index) => <Item>
           <picture onClick={() => setModal({ jsrc, jsrcx2, wsrc, wsrcx2, alt, index})}>
-            <source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
             <source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
+            <source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
             <Img src={jsrc} alt={job} />
           </picture>
         </Item>)}    
