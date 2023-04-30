@@ -55,10 +55,10 @@ const Modal = ({ jsrc, jsrcx2, wsrc, wsrcx2, alt, unshowModal, indexData, getPre
                     </Prev>
                 </LeftCont>}
                 <picture>
-                    <source srcSet={`${jsrc}`} type='image/jpg' media="(max-width: 640px)"/>
-                    <source srcSet={`${jsrcx2}`} type='image/jpg' />
-                    <source srcSet={`${wsrc}`} type='image/webp' media="(max-width: 640px)"/>
-                    <source srcSet={`${wsrcx2}`} type='image/webp' />
+                    <source srcSet={`${wsrc} 1x`} type='image/webp' media="(max-width: 640px)"/>
+                    <source srcSet={`${wsrcx2} 2x`} type='image/webp' />
+                    <source srcSet={`${jsrc} 1x`} type='image/jpg' media="(max-width: 640px)"/>
+                    <source srcSet={`${jsrcx2} 2x`} type='image/jpg' />
                     <Img
                         src={jsrc}
                         alt={alt}
