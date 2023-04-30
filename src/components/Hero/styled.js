@@ -11,13 +11,13 @@ export const HeroCont = styled.section`
     color: #FFFFFF;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg});
     @supports (background-image: -webkit-image-set(url(${heroimgwbp}) 1x)) {
-        background-image: -webkit-image-set(url(${heroimgwbp}) 1x) 
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -webkit-image-set(url(${heroimgwbp}) 1x) 
     }
    
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg2x});
         @supports (background-image: -webkit-image-set(url(${heroimgwbp2x}) 2x)) {
-            background-image: -webkit-image-set(url(${heroimgwbp2x}) 2x) 
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -webkit-image-set(url(${heroimgwbp2x}) 2x) 
         }
     }
     background-repeat: no-repeat;
