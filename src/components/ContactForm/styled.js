@@ -1,5 +1,5 @@
-import { BtnHC } from "components/common/styled";
-import styled from "styled-components";
+import {BtnHC} from 'components/common/styled';
+import styled from 'styled-components';
 
 export const Contact = styled.section`
     @media screen and (min-width: 768px) {
@@ -8,7 +8,7 @@ export const Contact = styled.section`
     @media screen and (min-width: 1360px) {
         padding: 0;
     }
-`
+`;
 
 export const Container = styled.div`
     display: flex;
@@ -23,7 +23,7 @@ export const Container = styled.div`
     @media screen and (min-width: 1360px) {
         max-width: 1360px;
     }
-`
+`;
 
 export const Img = styled.img`
     max-width: 320px;
@@ -37,7 +37,7 @@ export const Img = styled.img`
         max-width: 670px;
         height: 454px;
     }
-`
+`;
 
 export const Form = styled.form`
     padding: 51px 0 25px;
@@ -52,7 +52,7 @@ export const Form = styled.form`
         padding: 56px 0 77px;
         max-width: 642px;
     }
-`
+`;
 
 export const Head = styled.h2`
     font-weight: 400;
@@ -65,7 +65,7 @@ export const Head = styled.h2`
         line-height: 54px;
         margin-bottom: 24px;
     }
-`
+`;
 
 export const Input = styled.input`
     padding: 16px 0 16px 8px;
@@ -85,18 +85,17 @@ export const Input = styled.input`
         font-size: 18px;
         line-height: 25px;
     }
-`
+`;
 
 export const InpCont = styled.div`
     position: relative;
     width: 100%;
     display: flex;
-`
-
+`;
 
 export const Btn = styled(BtnHC)`
     padding: 16px 56px;
-`
+`;
 
 export const Icon = styled.svg`
     position: absolute;
@@ -110,4 +109,4 @@ export const Icon = styled.svg`
         height: 35px;
         bottom: 34px;
     }
-`
+`;

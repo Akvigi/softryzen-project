@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Footer = styled.section`
     display: flex;
@@ -14,13 +14,13 @@ export const Footer = styled.section`
         font-size: 18px;
         line-height: 25px;
     }
-`
+`;
 
 export const LinkCont = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 12px;
-`
+`;
 
 export const Link = styled.a`
     display: flex;
@@ -35,18 +35,18 @@ export const Link = styled.a`
         fill: #28A745;
         color: #28A745;
     }
-`
+`;
 
 export const Icon = styled.svg`
     width: 35px;
     height: 35px;
     fill: #fff;
-`
+`;
 
 export const IconIn = styled(Icon)`
     width: 31px;
-`
+`;
 
 export const IconYT = styled(Icon)`
     width: 40px;
-`
+`;

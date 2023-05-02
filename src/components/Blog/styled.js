@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import {Btn} from "../common/styled";
+import styled from 'styled-components';
+import {Btn} from '../common/styled';
 
 export const Blog = styled.section`
-`
+`;
 
 export const Container = styled.div`
     background-color: #0284D0;
@@ -19,7 +19,7 @@ export const Container = styled.div`
     @media screen and (min-width: 1360px) {
         max-width: 1360px;
     }
-`
+`;
 
 export const Img = styled.img`
     width: 100%;
@@ -33,7 +33,7 @@ export const Img = styled.img`
         width: 670px;
         height: 460px;
     }
-`
+`;
 
 export const TextContainer = styled.div`
     font-weight: 400;
@@ -52,11 +52,11 @@ export const TextContainer = styled.div`
         padding: 80px 28px;
         max-width: 642px;
     }
-`
+`;
 
 export const BtnBlog = styled(Btn)`
     &:hover {
         border-color: #0284D0;
         color: #0284D0;
     }
-`
+`;

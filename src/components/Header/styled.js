@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Header = styled.header`
     display: flex;
@@ -15,7 +15,7 @@ export const Header = styled.header`
     opacity: 1;
     z-index: 20;
     transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-`
+`;
 
 export const Container = styled.div`
     display: flex;
@@ -32,7 +32,7 @@ export const Container = styled.div`
         max-width: 1304px;
     }
     margin: 0 auto;
-`
+`;
 
 export const LogoCont = styled.div`
     font-size: 28px;
@@ -56,7 +56,7 @@ export const LogoCont = styled.div`
             fill: #2EBF4F;
         }
     }
-`
+`;
 
 export const LogoImg = styled.svg`
     max-width: 40px;
@@ -70,12 +70,12 @@ export const LogoImg = styled.svg`
     @media screen and (min-width: 1360px) {
         margin-right: 4px;
     }
-`
+`;
 
 export const GrText = styled.span`
     color: #28A745;
 
-`
+`;
 
 export const Link = styled.a`
     font-size: 16px;
@@ -111,5 +111,5 @@ export const Link = styled.a`
             position: absolute;
         }
     }
-`
+`;
 

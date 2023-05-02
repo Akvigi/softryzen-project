@@ -1,5 +1,5 @@
-import { SecTextTop } from "components/common/styled";
-import styled from "styled-components";
+import {SecTextTop} from 'components/common/styled';
+import styled from 'styled-components';
 
 export const Team = styled.section`
     display: flex;
@@ -17,7 +17,7 @@ export const Team = styled.section`
     @media screen and (min-width: 1360px) {
         padding: 80px 0 88px;
     }
-`
+`;
 
 export const TextCont = styled.div`
     margin-bottom: 63px;
@@ -27,7 +27,7 @@ export const TextCont = styled.div`
     @media screen and (min-width: 1360px) {
         margin-bottom: 36px;
     }
-`
+`;
 
 export const TopSecText = styled(SecTextTop)`
     @media screen and (min-width: 768px) {
@@ -38,14 +38,14 @@ export const TopSecText = styled(SecTextTop)`
         line-height: 27px;
     }
     
-`
+`;
 
 export const TeamGallery = styled.ul`
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
     }
-`
+`;
 
 export const Item = styled.li`
     text-align: center;
@@ -67,7 +67,7 @@ export const Item = styled.li`
         }
     }
     
-`
+`;
 
 export const Wrapp = styled.div`
     position: relative;
@@ -80,7 +80,7 @@ export const Wrapp = styled.div`
             pointer-events: auto;
         }
     }
-`
+`;
 
 export const Img = styled.img`
     max-width: 280px;
@@ -96,7 +96,7 @@ export const Img = styled.img`
         height: 287px;
     }
     transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
-`
+`;
 
 export const Name = styled.h3`
     font-weight: 400;
@@ -107,7 +107,7 @@ export const Name = styled.h3`
         font-size: 32px;
         line-height: 32px;
     }
-`
+`;
 
 export const Job = styled.p`
     font-weight: 400;
@@ -117,7 +117,7 @@ export const Job = styled.p`
         font-size: 18px;
         line-height: 25px;
     }
-`
+`;
 
 export const Overlay = styled.div`
     opacity: 0;
@@ -146,7 +146,7 @@ export const Overlay = styled.div`
             scale: 1.1;
         }
     }
-`
+`;
 
 export const Link = styled.a`
     display: flex;
@@ -160,4 +160,4 @@ export const Link = styled.a`
         margin-right: 25px;
     }
     transition: pointer-events 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-`
+`;

@@ -1,9 +1,9 @@
-import { Btn } from "components/common/styled";
-import styled from "styled-components";
+import {Btn} from 'components/common/styled';
+import styled from 'styled-components';
 
 export const AboutUs = styled.section`
 
-`
+`;
 
 export const Container = styled.div`
     display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.div`
         max-width: 1360px;
         max-height: 460px;
     }
-`
+`;
 
 export const Img = styled.img`
     max-width: 320px;
@@ -33,7 +33,7 @@ export const Img = styled.img`
         max-width: 670px;
         height: 460px;
     }
-`
+`;
 
 export const TextCont = styled.div`
     padding: 79px 0;
@@ -54,12 +54,12 @@ export const TextCont = styled.div`
         margin: 0 auto;
         max-width: 642px;
     }
-`
+`;
 
 export const BtnMore = styled(Btn)`
     &:hover {
         border-color: #28A745;
         color: #28A745;
     }
-`
+`;
 

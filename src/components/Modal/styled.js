@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Overlay = styled.div`
     position: fixed;
@@ -11,7 +11,7 @@ export const Overlay = styled.div`
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1200;
-`
+`;
 
 export const ModalWindow = styled.div`
     position: relative;
@@ -27,12 +27,12 @@ export const ModalWindow = styled.div`
         max-width: 900px;
         max-height: 100%;
     }
-`
+`;
 
 export const Img = styled.img`
     max-width: 100%;
     max-height: 100%;
-`
+`;
 
 const Cont = styled.div`
     position: absolute;
@@ -45,16 +45,16 @@ const Cont = styled.div`
     &:hover {
         opacity: 1;
     }`}
-`
+`;
 
 export const LeftCont = styled(Cont)`
     justify-content: end;
     right: 0;
-`
+`;
 
 export const RightCont = styled(Cont)`
     top: 0;
-`
+`;
 
 const Btn = styled.button`
     position: absolute;
@@ -67,7 +67,7 @@ const Btn = styled.button`
     }
     border-radius: 50px;
     background: #00000012;
-`
+`;
 export const PlacehCont = styled.div`
     display: flex;
     align-items: center;
@@ -79,19 +79,19 @@ export const PlacehCont = styled.div`
         max-width: calc(100vw - 230px);
         max-height: calc(100vh - 164px);
     }
-`
+`;
 
 export const Placeholder = styled.img`
     max-width: 80px;
-`
+`;
 
 export const Prev = styled(Btn)`
     position: relative;
-`
+`;
 
 export const Next = styled(Btn)`
     position: relative;
-`
+`;
 
 export const Close = styled(Btn)`
     bottom: -40px;
@@ -111,12 +111,12 @@ export const Close = styled(Btn)`
     &:hover {
         opacity: 1;
     }
-`
+`;
 export const Icon = styled.svg`
     fill: #fff;
     max-width: 100%;
     max-height: 100%;
-`
+`;
 
 export const AltCont = styled.div`
     color: #fff;
@@ -132,4 +132,4 @@ export const AltCont = styled.div`
         font-size: 25px;
     }
     left: 0;
-`
+`;

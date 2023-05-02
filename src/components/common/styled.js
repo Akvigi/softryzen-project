@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Head = styled.h2`
     font-weight: 400;
@@ -9,15 +9,15 @@ export const Head = styled.h2`
         font-size: 40px;
         line-height: 48px;
     }
-`
+`;
 
 export const SecTextTop = styled.p`
     margin-bottom: 16px;
-`
+`;
 
 export const SecTextBot = styled.p`
     margin-bottom: 24px;
-`
+`;
 
 export const BtnHC = styled.button`
     background-color: #28A745;
@@ -29,7 +29,7 @@ export const BtnHC = styled.button`
     &:hover {
         background: #2EBF4F;
     }
-`
+`;
 
 export const Btn = styled.button`
     border: 1px solid #FFFFFF;
@@ -47,4 +47,4 @@ export const Btn = styled.button`
     &:hover {
         background: #F4F4F4;
     }
-`
+`;

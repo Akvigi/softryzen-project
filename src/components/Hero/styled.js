@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import heroimg from '../../images/home/showcase.jpg'
-import heroimg2x from '../../images/home/showcase@2x.jpg'
-import heroimgwbp from '../../images/home/showcase.webp'
-import heroimgwbp2x from '../../images/home/showcase@2x.webp'
-import { BtnHC } from "components/common/styled";
+import styled from 'styled-components';
+import heroimg from '../../images/home/showcase.jpg';
+import heroimg2x from '../../images/home/showcase@2x.jpg';
+import heroimgwbp from '../../images/home/showcase.webp';
+import heroimgwbp2x from '../../images/home/showcase@2x.webp';
+import {BtnHC} from 'components/common/styled';
 
 export const HeroCont = styled.section`
     padding: 160px 0 265px 0;
@@ -17,7 +17,8 @@ export const HeroCont = styled.section`
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroimg2x});
         @supports (background-image: -webkit-image-set(url(${heroimgwbp2x}) 2x)) {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -webkit-image-set(url(${heroimgwbp2x}) 2x) 
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                -webkit-image-set(url(${heroimgwbp2x}) 2x) 
         }
     }
     background-repeat: no-repeat;
@@ -29,7 +30,7 @@ export const HeroCont = styled.section`
     @media screen and (min-width: 1360px) {
         padding: 272px 0 270px 0;
     }
-`
+`;
 
 export const Container = styled.div`
     display: flex;
@@ -44,7 +45,7 @@ export const Container = styled.div`
         max-width: 100%;
     }
     margin: 0 auto;
-`
+`;
 
 export const Head = styled.h1`
     font-weight: 600;
@@ -58,7 +59,7 @@ export const Head = styled.h1`
         padding: 0;
     }
     
-`
+`;
 export const SecText = styled.h2`
     font-weight: 400;
     font-size: 26px;
@@ -71,7 +72,7 @@ export const SecText = styled.h2`
     @media screen and (min-width: 1360px) {
         line-height: 54px;
     }
-`
+`;
 export const Btn = styled(BtnHC)`
     padding: 16px 32px;
     align-items: center;
@@ -81,10 +82,10 @@ export const Btn = styled(BtnHC)`
     @media screen and (min-width: 768px) {
         padding: 20px 32px;
     }
-`
+`;
 
 export const Icon = styled.svg`
     max-width: 9px;
     height: 18px;
     margin-right: 8px;
-`
+`;

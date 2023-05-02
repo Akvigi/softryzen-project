@@ -1,5 +1,5 @@
-import { SecTextTop } from "components/common/styled";
-import styled from "styled-components";
+import {SecTextTop} from 'components/common/styled';
+import styled from 'styled-components';
 
 export const OurWork = styled.section`
     display: flex;
@@ -18,7 +18,7 @@ export const OurWork = styled.section`
         max-width: 1304px;
 
     }
-`
+`;
 
 export const TextCont = styled.div`
     color: #333333;
@@ -38,12 +38,11 @@ export const TextCont = styled.div`
     @media screen and (min-width: 1360px) {
         margin-bottom: 36px;
     }
-`
+`;
 
 export const TopText = styled(SecTextTop)`
     line-height: 33px;
-`
-
+`;
 
 export const Gallery = styled.ul`
     display: flex;
@@ -57,7 +56,7 @@ export const Gallery = styled.ul`
     @media screen and (min-width: 1360px) {
         max-width: 1304px;
     }
-`
+`;
 
 export const Item = styled.li`
     &:not(:last-child) {
@@ -76,7 +75,7 @@ export const Item = styled.li`
             margin-bottom: 24px
         }
     }   
-`
+`;
 
 export const Img = styled.img`
     max-width: 280px;
@@ -93,4 +92,4 @@ export const Img = styled.img`
     &:hover {
         opacity: 0.6;
     }
-`
+`;
