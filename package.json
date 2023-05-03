@@ -1,8 +1,8 @@
 {
   "name": "softryzen-project",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://cool-bombolone-ccff38.netlify.app",
+  "private": false,
+  "homepage": "akvigi.github.io/softryzen-project/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
