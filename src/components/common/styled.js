@@ -48,3 +48,17 @@ export const Btn = styled.button`
         background: #F4F4F4;
     }
 `;
+
+export const Icon = styled.svg`
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+`;
+
+export const IconIn = styled(Icon)`
+    width: 31px;
+`;
+
+export const IconYT = styled(Icon)`
+    width: 40px;
+`;

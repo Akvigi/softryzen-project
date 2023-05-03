@@ -31,12 +31,14 @@ export const App = () => {
 				goToWork={() => onScroll(workRef)}
 				goToBlog={() => onScroll(blogRef)}
 				goToContact={() => onScroll(contactRef)} />
-			<Hero refTo={heroRef} />
-			<AboutUs refTo={aboutUsRef}/>
-			<OurWork refTo={workRef} setModal={setModal} />
-			<Blog refTo={blogRef} />
-			<Team />
-			<Contact refTo={contactRef} />
+			<main>
+				<Hero refTo={heroRef} />
+				<AboutUs refTo={aboutUsRef}/>
+				<OurWork refTo={workRef} setModal={setModal} />
+				<Blog refTo={blogRef} />
+				<Team />
+				<Contact refTo={contactRef} />
+			</main>
 			<Footer />
 			{modal && <Modal
 				jsrc={modal.jsrc}

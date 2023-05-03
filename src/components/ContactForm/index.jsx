@@ -53,7 +53,7 @@ const ContactForm = ({refTo}) => {
 				<picture>
 					<source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
 					<source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
-					<Img src={jsrc} alt='coffee`s with books' />
+					<Img src={jsrc} alt='coffee`s with books' loading='lazy'/>
 				</picture>
 				<Form onSubmit={e => submitForm(e, name, email)}>
 					<Head>Request Callback</Head>

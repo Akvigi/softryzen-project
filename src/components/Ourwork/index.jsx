@@ -16,7 +16,7 @@ const OWork = ({refTo, setModal}) => (
 				<picture onClick={() => setModal({jsrc, jsrcx2, wsrc, wsrcx2, alt, index})}>
 					<source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
 					<source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
-					<Img src={jsrc} alt={alt} />
+					<Img src={jsrc} alt={alt} loading='lazy'/>
 				</picture>
 			</Item>)}
 		</Gallery>
