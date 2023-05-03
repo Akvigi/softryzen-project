@@ -48,7 +48,7 @@ const Modal = ({jsrc, jsrcx2, wsrc, wsrcx2, alt, unshowModal, indexData, getPrev
 		<Overlay onClick = {onBackClick}>
 			<ModalWindow>
 				{indexData < data.length - 1 && <LeftCont>
-					<Prev onClick={onNext}>
+					<Prev onClick={onNext} aria-label='Button which switches to the previous photo'>
 						<Icon>
 							<use href={ic + '#left'} />
 						</Icon>
@@ -67,17 +67,17 @@ const Modal = ({jsrc, jsrcx2, wsrc, wsrcx2, alt, unshowModal, indexData, getPrev
 				</picture>
 				{!loading && <AltCont><p>{alt}</p><p>Page: {indexData + 1} of 6</p></AltCont>}
 				{indexData > 0 && <RightCont>
-					<Next onClick={onPrev}>
+					<Next onClick={onPrev} aria-label='Button which switches to the next photo'>
 						<Icon>
 							<use href={ic + '#right'} />
 						</Icon>
 					</Next>
 				</RightCont>}
-				{!loading && <Close onClick={unshowModal}>
+				{!loading && <Close onClick={unshowModal} aria-label='Button which switches off gallery'>
 					<img src={close} alt='close'/>
 				</Close>}
 			</ModalWindow>
-			{loading && <PlacehCont><Placeholder src={placeholder} alt='Загрузка...' /></PlacehCont>}
+			{loading && <PlacehCont><Placeholder src={placeholder} alt='Loading...' /></PlacehCont>}
 		</Overlay>, modal,
 	);
 };

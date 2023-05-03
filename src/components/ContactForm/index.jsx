@@ -61,7 +61,7 @@ const ContactForm = ({refTo}) => {
 						onChange={e => setName(e.currentTarget.value)}
 						placeholder='Enter your name' />
 					<InpCont>
-						{error && <Icon>
+						{error && <Icon aria-label='Warning'>
 							<use href={ic + '#worning'} />
 						</Icon>}
 						<Input value={email}
