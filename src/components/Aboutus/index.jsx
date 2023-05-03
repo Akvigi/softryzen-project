@@ -13,7 +13,7 @@ const AbUs = ({refTo}) => (
 			<picture>
 				<source srcSet={`${wsrc} 1x, ${wsrcx2} 2x`} type='image/webp' />
 				<source srcSet={`${jsrc} 1x, ${jsrcx2} 2x`} type='image/jpg' />
-				<Img src={jsrc} alt='Our team' />
+				<Img src={jsrc} alt='Our team' loading='lazy'/>
 			</picture>
 			<TextCont>
 				<SecTextTop>What you are looking for</SecTextTop>
