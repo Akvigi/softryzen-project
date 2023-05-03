@@ -159,5 +159,7 @@ export const Link = styled.a`
     &:not(:last-child) {
         margin-right: 25px;
     }
-    transition: pointer-events 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    &:hover>svg {
+        fill: #28A745;
+    }
 `;

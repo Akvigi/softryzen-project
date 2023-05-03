@@ -52,6 +52,7 @@ export const Btn = styled.button`
 export const Icon = styled.svg`
     width: 35px;
     height: 35px;
+    transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     fill: #fff;
 `;
 
