@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/softryzen-project/static/css/main.82c32144.css",
-    "main.js": "/softryzen-project/static/js/main.ba027742.js",
+    "main.js": "/softryzen-project/static/js/main.864b772b.js",
     "static/media/showcase@2x.jpg": "/softryzen-project/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/showcase@2x.webp": "/softryzen-project/static/media/showcase@2x.6718cc6851409ea4b6ba.webp",
     "static/media/showcase.jpg": "/softryzen-project/static/media/showcase.51cab55d982ce4bcedb5.jpg",
@@ -54,13 +54,13 @@
     "static/media/person2.webp": "/softryzen-project/static/media/person2.95a0a7b91dc6ac12186c.webp",
     "static/media/cases2.webp": "/softryzen-project/static/media/cases2.979f90d7f0e5ed9ed242.webp",
     "static/media/cases5.webp": "/softryzen-project/static/media/cases5.e032dfbc6e1d381405ad.webp",
-    "static/media/icons.svg": "/softryzen-project/static/media/icons.2ce14cd603602f6bee32b2466f1cafce.svg",
+    "static/media/icons.svg": "/softryzen-project/static/media/icons.72daf7ee416d4e8b61d6e29fa1e4b879.svg",
     "index.html": "/softryzen-project/index.html",
     "main.82c32144.css.map": "/softryzen-project/static/css/main.82c32144.css.map",
-    "main.ba027742.js.map": "/softryzen-project/static/js/main.ba027742.js.map"
+    "main.864b772b.js.map": "/softryzen-project/static/js/main.864b772b.js.map"
   },
   "entrypoints": [
     "static/css/main.82c32144.css",
-    "static/js/main.ba027742.js"
+    "static/js/main.864b772b.js"
   ]
 }
